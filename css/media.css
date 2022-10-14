@@ -1,0 +1,101 @@
+@media (max-width: 991px) {
+  .main-nav {
+    padding: 150px 20px;
+  }
+  header {
+    padding: 20px;
+  }
+  .navigation {
+    display: none;
+  }
+  .navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondarycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  header ul li {
+    margin: 10px 0;
+  }
+
+  header ul li a {
+    margin-left: 0;
+    font-size: 1.5em;
+    /* color: black; */
+  }
+  .toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: url(/img/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 2px;
+  }
+  .toggle.active {
+    background: url(/img/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .banner {
+    max-width: 400px;
+  }
+  .content .text-box h2 {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 600px) {
+  .banner {
+    opacity: 0.2;
+  }
+  @keyframes fade_in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.3;
+    }
+  }
+  .services {
+    flex-wrap: wrap;
+  }
+  .services .services-box {
+    padding: 50px 10px;
+    transition: 0.5s linear all;
+}
+}
+@media (max-width: 700px) {
+ 
+  .check {
+    width: 100%;
+    margin: 0.7rem 0;
+  }
+  .main-contact-section {
+    padding: 1rem;
+    width: 90%;
+  }
+  .contact-us {
+    padding: 3rem 0.5rem;
+  }
+}
+
+
+@media (max-width:500px){
+
+  .project-area h3 {
+    font-size: 1.5rem;
+    line-height: 38px;
+  }
+}
